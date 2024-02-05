@@ -133,6 +133,15 @@ video {
     font-size: 16px;
 }
 
+.link{
+    text-decoration: none;
+    color: #EDF2F6;
+    font-weight: 900;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width: 1080px) {
     .texts span {
         font-size: 24px;
@@ -170,11 +179,6 @@ video {
 
 }
 
-.link{
-    text-decoration: none;
-    color: #EDF2F6;
-    font-weight: 700;
-}
 
 @media only screen and (min-width: 1080px) {
     .texts span {

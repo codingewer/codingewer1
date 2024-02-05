@@ -47,8 +47,8 @@ function Home() {
     name: "Yucel Atli",
     content: {
       age: "22",
-      email: "yatli6545@gmail.com",
-      phone: "0505 804 48 18",
+      email: "yatli5645@gmail.com",
+      phone: "+90 505 804 48 18",
     },
   };
 
@@ -92,7 +92,7 @@ function Home() {
                   <img src={url.iconUrl} alt={url.name} />
                 </a>
               ))}
-              <a className="link" href="#cv">CV</a>
+              <a className="link" href="#cv">My CV</a>
             </div>
           </div>
         </div>
