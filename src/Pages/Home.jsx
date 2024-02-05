@@ -29,6 +29,49 @@ function Home() {
       iconUrl: inlogo,
     },
   ];
+
+  const skils = [
+    { id: 1, name: "HTML", level: "90%", color: "darkslategrey" },
+    { id: 2, name: "CSS", level: "80%", color: "darkslategrey" },
+    { id: 3, name: "Javascript", level: "70%", color: "darkslategrey" },
+    { id: 4, name: "React", level: "60%", color: "darkslategrey" },
+    { id: 4, name: "Go", level: "70%", color: "darkslategrey" },
+    { id: 4, name: "Cloud", level: "50%", color: "darkslategrey" },
+    { id: 4, name: "React Native", level: "60%", color: "darkslategrey" },
+    { id: 4, name: "Java", level: "50%", color: "darkslategrey" },
+    { id: 4, name: "Linux", level: "80%", color: "darkslategrey" },
+  ];
+
+  const details = {
+    id: 1,
+    name: "Yucel Atli",
+    content: {
+      age: "22",
+      email: "yatli6545@gmail.com",
+      phone: "0505 804 48 18",
+    },
+  };
+
+  const bio =
+ `   
+    Hi, I'm Yücel I'm a full stack web developer. I make my websites myself and publish them on my own blult servers.
+
+    I often use Linux and Nginx. I use cloud services such as AWS, Render, VPS servers, GC, etc. I also quickly adapt and use what I do not have knowledge of. 
+   
+   In addition to the web, I am developing myself in the field of mobile application, artificial intelligence and security, and I aim to bring these three together in the most stable and performant way.
+   `;
+  const education = [
+    {
+      id: 1,
+      name: "none",
+      degree: "none",
+      year: "none",
+    }
+  ];
+  const experience = [
+    { id: 1, position: "Full Stack Software Developer", year: "2022" }
+
+  ];
   return (
     <div className="home-page">
       <div className="home-content">
@@ -36,20 +79,72 @@ function Home() {
           <div className="texts">
             <span style={{ fontWeight: 700 }}>Codin|gewer,</span>
             <span style={{ fontWeight: 400, textWrap: "wrap" }}>
-              İhtiyaçlarınıza uygun
+            Suitable for your needs
             </span>
-            <span style={{ fontWeight: 700 }}> Mobil ve Web</span>
-            <span style={{ fontWeight: 400 }}>Uygulamaları</span>
-          </div >
-          <div className="contact-container" >
-            <span>Bizimle iletişime geçin;</span>
+            <span style={{ fontWeight: 700 }}> Mobile & Web</span>
+            <span style={{ fontWeight: 400 }}>Apps</span>
+          </div>
+          <div className="contact-container">
+            <span>Contact Us;</span>
             <div className="social-links">
               {urls.map((url, index) => (
                 <a href={url.url} target="_blank" rel="noreferrer" key={index}>
                   <img src={url.iconUrl} alt={url.name} />
                 </a>
               ))}
+              <a className="link" href="#cv">CV</a>
             </div>
+          </div>
+        </div>
+        <div id="cv" className="content-item cv">
+          <div className="cv-details">
+            <div className="cv-details-item">
+              <span className="cv-item-title">{details.name}</span>
+              <span className="cv-item-subtitle">Phone:</span>
+              <span className="cv-item-parag">{details.content.phone}</span>
+              <span className="cv-item-subtitle">Email:</span>
+              <span className="cv-item-parag">{details.content.email}</span>
+            </div>
+            <div className="cv-details-item">
+              <span className="cv-item-title">Bio</span>
+              <span className="cv-item-parag">{bio}</span>
+            </div>
+            <div className="cv-details-item">
+              <span className="cv-item-title">Experience</span>
+              {experience.map((exp, index) => (
+                <div key={index} className="cv-details-item">
+                  <span className="cv-item-subtitle">{exp.position}</span>
+                  <span className="cv-item-parag">{exp.year}</span>
+                </div>
+              ))}
+            </div>
+            <div className="cv-details-item">
+              <span className="cv-item-title">Education</span>
+              {education.map((edu, index) => (
+                <div key={index} className="cv-details-item">
+                  <span className="cv-item-subtitle">{edu.name}</span>
+                  <span className="cv-item-parag">{edu.degree}</span>
+                  <span className="cv-item-parag">{edu.year}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="skils-container">
+          <span className="cv-item-title">Skills</span>
+            {skils.map((skil, index) => (
+              <div key={index} className="skils-item">
+                <span>{skil.name} :</span>
+                <div
+                  style={{ borderColor: skil.color }}
+                  className="progress-bar"
+                >
+                  <div
+                    style={{ width: skil.level, backgroundColor: skil.color }}
+                    className="inner-bar"
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
