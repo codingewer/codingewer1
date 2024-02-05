@@ -37,7 +37,7 @@ function Home() {
     { id: 4, name: "React", level: "80%", color: "darkslategrey" },
     { id: 4, name: "Go", level: "80%", color: "darkslategrey" },
     { id: 4, name: "Cloud", level: "70%", color: "darkslategrey" },
-    { id: 4, name: "React Native", level: "0%", color: "darkslategrey" },
+    { id: 4, name: "React Native", level: "5+0%", color: "darkslategrey" },
     { id: 4, name: "Java", level: "50%", color: "darkslategrey" },
     { id: 4, name: "Linux", level: "80%", color: "darkslategrey" },
   ];
