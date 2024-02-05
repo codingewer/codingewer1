@@ -49,6 +49,7 @@ function Home() {
       age: "22",
       email: "yatli5645@gmail.com",
       phone: "+90 505 804 48 18",
+      github:"https://github.com/codingewer"
     },
   };
 
@@ -104,6 +105,8 @@ function Home() {
               <span className="cv-item-parag">{details.content.phone}</span>
               <span className="cv-item-subtitle">Email:</span>
               <span className="cv-item-parag">{details.content.email}</span>
+              <span className="cv-item-subtitle">Github:</span>
+              <a target="_blank" className="cv-item-parag" href={details.content.github} >{details.content.github}</a>
             </div>
             <div className="cv-details-item">
               <span className="cv-item-title">Bio</span>
