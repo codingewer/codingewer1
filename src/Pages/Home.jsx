@@ -46,7 +46,7 @@ function Home() {
     id: 1,
     name: "Yucel Atli",
     content: {
-      age: "22",
+      age: "19",
       email: "yatli5645@gmail.com",
       phone: "+90 505 804 48 18",
       github:"https://github.com/codingewer"
@@ -64,7 +64,7 @@ function Home() {
   const education = [
     {
       id: 1,
-      name: "Look me Github:))",
+      name: "Look my Github:)",
       degree: "",
       year: "",
     }
