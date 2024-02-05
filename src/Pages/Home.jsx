@@ -64,13 +64,13 @@ function Home() {
   const education = [
     {
       id: 1,
-      name: "none",
-      degree: "none",
-      year: "none",
+      name: "Look me Github:))",
+      degree: "",
+      year: "",
     }
   ];
   const experience = [
-    { id: 1, position: "Full Stack Software Developer", year: "2022" }
+    { id: 1, position: "Freelancer-Full Stack Software Developer", year: "2022" }
 
   ];
   return (
