@@ -32,12 +32,12 @@ function Home() {
 
   const skils = [
     { id: 1, name: "HTML", level: "90%", color: "darkslategrey" },
-    { id: 2, name: "CSS", level: "80%", color: "darkslategrey" },
+    { id: 2, name: "CSS", level: "90%", color: "darkslategrey" },
     { id: 3, name: "Javascript", level: "70%", color: "darkslategrey" },
-    { id: 4, name: "React", level: "60%", color: "darkslategrey" },
-    { id: 4, name: "Go", level: "70%", color: "darkslategrey" },
-    { id: 4, name: "Cloud", level: "50%", color: "darkslategrey" },
-    { id: 4, name: "React Native", level: "60%", color: "darkslategrey" },
+    { id: 4, name: "React", level: "80%", color: "darkslategrey" },
+    { id: 4, name: "Go", level: "81%", color: "darkslategrey" },
+    { id: 4, name: "Cloud", level: "70%", color: "darkslategrey" },
+    { id: 4, name: "React Native", level: "50%", color: "darkslategrey" },
     { id: 4, name: "Java", level: "50%", color: "darkslategrey" },
     { id: 4, name: "Linux", level: "80%", color: "darkslategrey" },
   ];
