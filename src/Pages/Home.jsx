@@ -55,7 +55,7 @@ function Home() {
 
   const bio =
  `   
-    Hi, I'm Yücel I'm a full stack web developer. I make my websites myself and publish them on my own blult servers.
+    Hi, I'm Yücel I'm a full stack web developer. I make my websites myself and publish them on my own cloud servers.
 
     I often use Linux and Nginx. I use cloud services such as AWS, Render, VPS servers, GC, etc. I also quickly adapt and use what I do not have knowledge of. 
    
