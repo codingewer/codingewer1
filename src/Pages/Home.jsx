@@ -34,44 +34,53 @@ function Home() {
     { id: 1, name: "HTML", level: "90%", color: "darkslategrey" },
     { id: 2, name: "CSS", level: "90%", color: "darkslategrey" },
     { id: 3, name: "Javascript", level: "70%", color: "darkslategrey" },
-    { id: 4, name: "React", level: "80%", color: "darkslategrey" },
-    { id: 4, name: "Go", level: "80%", color: "darkslategrey" },
-    { id: 4, name: "Cloud", level: "70%", color: "darkslategrey" },
-    { id: 4, name: "React Native", level: "50%", color: "darkslategrey" },
-    { id: 4, name: "Java", level: "50%", color: "darkslategrey" },
-    { id: 4, name: "Linux", level: "80%", color: "darkslategrey" },
+    { id: 5, name: "React", level: "80%", color: "darkslategrey" },
+    { id: 6, name: "PostgreSQL", level: "80%", color: "darkslategrey" },
+    { id: 7, name: "MongoDB", level: "70%", color: "darkslategrey" },
+    { id: 8, name: "coachDB", level: "50%", color: "darkslategrey" },
+    { id: 9, name: "Go", level: "80%", color: "darkslategrey" },
+    { id: 10, name: "Cloud", level: "70%", color: "darkslategrey" },
+    { id: 11, name: "React Native", level: "50%", color: "darkslategrey" },
+    { id: 12, name: "Java", level: "50%", color: "darkslategrey" },
+    { id: 13, name: "Linux", level: "80%", color: "darkslategrey" },
+    { id: 14, name: "Figma", level: "70%", color: "darkslategrey" },
   ];
 
   const details = {
     id: 1,
     name: "Yucel Atli",
     content: {
-      age: "19",
+      age: "22",
       email: "yatli5645@gmail.com",
       phone: "+90 505 804 48 18",
-      github:"https://github.com/codingewer"
+      github: "https://github.com/codingewer",
     },
   };
 
-  const bio =
- `   
-    Hi, I'm Yücel I'm a full stack web developer. I make my websites myself and publish them on my own cloud servers.
-
-    I often use Linux and Nginx. I use cloud services such as AWS, Render, VPS servers, GC, etc. I also quickly adapt and use what I do not have knowledge of. 
-   
-   In addition to the web, I am developing myself in the field of mobile application, artificial intelligence and security, and I aim to bring these three together in the most stable and performant way.
+  const bio = `
+  Hello, I Yücel I am developing myself in the field of 
+  software and I am progressing in this field. I
+   work as a freelancer on various platforms. 
+ We are in the artificial intelligence revolution these days and it is 
+ becoming more and more important every day. 
+ In addition to artificial intelligence tools, the 
+ integration of artificial intelligence in applications is becoming very important, 
+ I am developing myself on integrating artificial intelligence 
+ into applications as well as installing and using models on my own computer. 
+ In addition to artificial intelligence, security is also a very 
+ important area and the combination of the two is obviously exciting. 
+ Continue to develop and improve. Yours sincerely.
    `;
   const education = [
     {
       id: 1,
-      name: "Look my Github:)",
-      degree: "",
-      year: "",
-    }
+      name: "Look",
+      degree: "my",
+      year: "Github:)",
+    },
   ];
   const experience = [
-    { id: 1, position: "Freelancer-Full Stack Software Developer", year: "2022" }
-
+    { id: 1, position: "Full Stack Software Developer", year: "2022" },
   ];
   return (
     <div className="home-page">
@@ -80,7 +89,7 @@ function Home() {
           <div className="texts">
             <span style={{ fontWeight: 700 }}>Codin|gewer,</span>
             <span style={{ fontWeight: 400, textWrap: "wrap" }}>
-            Suitable for your needs
+              Suitable for your needs
             </span>
             <span style={{ fontWeight: 700 }}> Mobile & Web</span>
             <span style={{ fontWeight: 400 }}>Apps</span>
@@ -93,7 +102,9 @@ function Home() {
                   <img src={url.iconUrl} alt={url.name} />
                 </a>
               ))}
-              <a className="link" href="#cv">My CV</a>
+              <a className="link" href="#cv">
+                My CV
+              </a>
             </div>
           </div>
         </div>
@@ -106,7 +117,13 @@ function Home() {
               <span className="cv-item-subtitle">Email:</span>
               <span className="cv-item-parag">{details.content.email}</span>
               <span className="cv-item-subtitle">Github:</span>
-              <a target="_blank" className="cv-item-parag" href={details.content.github} >{details.content.github}</a>
+              <a
+                target="_blank"
+                className="cv-item-parag"
+                href={details.content.github}
+              >
+                {details.content.github}
+              </a>
             </div>
             <div className="cv-details-item">
               <span className="cv-item-title">Bio</span>
@@ -133,7 +150,7 @@ function Home() {
             </div>
           </div>
           <div className="skils-container">
-          <span className="cv-item-title">Skills</span>
+            <span className="cv-item-title">Skills</span>
             {skils.map((skil, index) => (
               <div key={index} className="skils-item">
                 <span>{skil.name} :</span>
